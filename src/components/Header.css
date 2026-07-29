@@ -90,7 +90,7 @@
 }
 
 .logo h1 {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     font-weight: 800;
     line-height: 1;
     letter-spacing: 0.5px;
@@ -98,11 +98,12 @@
 }
 
 .logo .subtitle {
-    font-size: 0.65rem;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     color: var(--text-light);
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 /* Desktop Navigation */
@@ -129,21 +130,19 @@
     align-items: center;
     gap: 4px;
     height: 100%;
+    transition: color 0.2s ease;
 }
 
 .nav-link:after {
     content: '';
     position: absolute;
-    bottom: 24px;
+    bottom: 0;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 3px;
+    border-radius: 3px 3px 0 0;
     background-color: var(--primary-orange);
     transition: width 0.3s ease;
-}
-
-.header.scrolled .nav-link:after {
-    bottom: 18px;
 }
 
 .nav-link:hover:after,
@@ -154,6 +153,7 @@
 .nav-link:hover,
 .nav-link.active {
     color: var(--primary-orange);
+    font-weight: 700;
 }
 
 /* Mega Menu */
@@ -314,6 +314,12 @@
     color: var(--primary-blue);
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.mobile-link.active,
+.mobile-link-header.active {
+    color: var(--primary-orange);
 }
 
 .mobile-submenu {

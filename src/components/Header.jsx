@@ -29,12 +29,12 @@ const Header = () => {
             <div className="top-bar">
                 <div className="container top-bar-content">
                     <div className="contact-info">
-                        <a href="tel:065248224" className="contact-item"><Phone size={14} /> 065248224</a>
-                        <a href="https://wa.me/971528053811" className="contact-item"><Phone size={14} /> 052 805 3811 (CALL/WA)</a>
+                        <a href="tel:+971505878157" className="contact-item"><Phone size={14} /> +971 50 587 8157</a>
+                        <a href="https://wa.me/971505878157" className="contact-item" target="_blank" rel="noopener noreferrer"><Phone size={14} /> +971 50 587 8157 (CALL/WA)</a>
                         <a href="mailto:sales@rgsgulf.com" className="contact-item"><Mail size={14} /> sales@rgsgulf.com</a>
                     </div>
                     <div className="address-info mobile-hidden">
-                        <span className="contact-item"><MapPin size={14} /> SHARJAH, U.A.E.</span>
+                        <span className="contact-item"><MapPin size={14} /> Dubai,UAE</span>
                     </div>
                 </div>
             </div>
@@ -44,10 +44,10 @@ const Header = () => {
                 <div className="container header-inner">
                     <div className="logo-wrapper">
                         <Link to="/" className="logo">
-                            <img src="/images/logo.svg" alt="Glotra logo" className="logo-mark" />
+                            <img src="/images/logo.svg" alt="FRISTYLE logo" className="logo-mark" />
                             <div className="logo-text">
-                                <h1>GLOTRA</h1>
-                                <span className="subtitle">BUILDING MATERIALS</span>
+                                <h1>FRISTYLE</h1>
+                                <span className="subtitle">BUILDING & CONSTRUCTION MATERIALS TRADING L.L.C</span>
                             </div>
                         </Link>
                     </div>
@@ -59,7 +59,7 @@ const Header = () => {
                             <li><Link to="/about" className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}>ABOUT US</Link></li>
 
                             <li className="nav-item-dropdown">
-                                <Link to="/products" className={`nav-link ${location.pathname.includes('/products') ? 'active' : ''}`}>
+                                <Link to="/products" className={`nav-link ${location.pathname.startsWith('/products') ? 'active' : ''}`}>
                                     PRODUCTS <ChevronDown size={14} className="dropdown-arrow" />
                                 </Link>
                                 <div className="mega-menu">
@@ -114,17 +114,17 @@ const Header = () => {
             {/* Mobile Navigation Overlay */}
             <div className={`mobile-menu-overlay ${isMenuOpen ? 'open' : ''}`}>
                 <nav className="mobile-nav">
-                    <Link to="/" className="mobile-link">HOME</Link>
-                    <Link to="/about" className="mobile-link">ABOUT US</Link>
+                    <Link to="/" className={`mobile-link ${location.pathname === '/' ? 'active' : ''}`}>HOME</Link>
+                    <Link to="/about" className={`mobile-link ${location.pathname === '/about' ? 'active' : ''}`}>ABOUT US</Link>
                     <div className="mobile-submenu">
-                        <span className="mobile-link-header">PRODUCTS</span>
+                        <Link to="/products" className={`mobile-link-header ${location.pathname.startsWith('/products') ? 'active' : ''}`}>PRODUCTS</Link>
                         {categories.filter(c => c !== 'All').map(cat => (
                             <Link key={cat} to={`/products?category=${encodeURIComponent(cat)}`} className="mobile-sublink">
                                 {cat}
                             </Link>
                         ))}
                     </div>
-                    <Link to="/brands" className="mobile-link">BRANDS</Link>
+                    <Link to="/brands" className={`mobile-link ${location.pathname === '/brands' ? 'active' : ''}`}>BRANDS</Link>
                 </nav>
             </div>
         </header>

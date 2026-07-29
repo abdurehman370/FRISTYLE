@@ -46,7 +46,7 @@ const Home = () => {
             {/* About Summary */}
             <section className="section bg-light reveal">
                 <div className="container text-center">
-                    <h2 className="section-title">Welcome to Glotra Building Materials</h2>
+                    <h2 className="section-title">Welcome to FRISTYLE BUILDING & CONSTRUCTION MATERIALS TRADING L.L.C</h2>
                     <p className="section-desc">
                         We are dedicated to providing high-quality building materials to the construction industry.
                         With a focus on reliability and excellence, we serve clients across the UAE.

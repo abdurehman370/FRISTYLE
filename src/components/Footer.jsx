@@ -7,15 +7,12 @@ const Footer = () => {
         <footer className="footer">
             <div className="container footer-content">
                 <div className="footer-col">
-                    <h3>GLOTRA BUILDING MATERIALS</h3>
+                    <h3>FRISTYLE BUILDING & CONSTRUCTION MATERIALS TRADING L.L.C</h3>
                     <p className="address">
-                        <MapPin size={16} className="icon" /> P.O. BOX 36429 - SHARJAH, U.A.E.
+                        <MapPin size={16} className="icon" /> Dubai,UAE
                     </p>
                     <p className="contact">
-                        <Phone size={16} className="icon" /> Landline - 065248224
-                    </p>
-                    <p className="contact">
-                        <Phone size={16} className="icon" /> 052 805 3811 (CALL/WA)
+                        <Phone size={16} className="icon" /> <a href="tel:+971505878157" style={{ color: 'inherit' }}>+971 50 587 8157</a>
                     </p>
                     <p className="email">
                         <Mail size={16} className="icon" /> sales@rgsgulf.com
@@ -31,7 +28,6 @@ const Footer = () => {
                         <li><a href="/about">About Us</a></li>
                         <li><a href="/products">Products</a></li>
                         <li><a href="/brands">Brands</a></li>
-                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -46,7 +42,7 @@ const Footer = () => {
             </div>
             <div className="footer-bottom">
                 <div className="container">
-                    <p>&copy; {new Date().getFullYear()} Glotra Building Materials. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} FRISTYLE BUILDING & CONSTRUCTION MATERIALS TRADING L.L.C. All rights reserved.</p>
                 </div>
             </div>
         </footer>

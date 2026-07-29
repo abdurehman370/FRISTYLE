@@ -15,7 +15,7 @@ const About = () => {
                     <div className="about-text">
                         <h2>Who We Are</h2>
                         <p>
-                            Glotra Building Materials is a premier supplier of high-quality construction and industrial materials in the United Arab Emirates.
+                            FRISTYLE BUILDING & CONSTRUCTION MATERIALS TRADING L.L.C is a premier supplier of high-quality construction and industrial materials in the United Arab Emirates.
                             Established with a vision to support the growing infrastructure needs of the region, we have built a reputation for reliability,
                             quality, and exceptional customer service.
                         </p>
