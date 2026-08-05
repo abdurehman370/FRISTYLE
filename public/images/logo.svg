@@ -1,8 +1,34 @@
-<svg width="110" height="80" viewBox="0 0 110 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-<title id="title">Glotra logo</title>
-<desc id="desc">Three overlapping rounded rectangles in blue shades</desc>
-<rect x="0" y="26" width="60" height="40" rx="4" fill="#bed4eb"/>
-<rect x="25" y="13" width="65" height="45" rx="4" fill="#0b69b4"/>
-<rect x="50" y="0" width="60" height="55" rx="4" fill="#153c7a"/>
-</svg>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.25"/>
+    </filter>
+  </defs>
 
+  <!-- Background Shield Container -->
+  <rect x="8" y="8" width="104" height="104" rx="24" fill="url(#navyGrad)" />
+  
+  <!-- Outer Structural Cube Frame -->
+  <path d="M60 22L92 39.5V74.5L60 92L28 74.5V39.5L60 22Z" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Modern Geometric 'F' Steel Beam Blocks -->
+  <!-- Vertical Pillar -->
+  <rect x="38" y="34" width="12" height="52" rx="3" fill="url(#amberGrad)" filter="url(#shadow)"/>
+  
+  <!-- Top Horizontal Beam -->
+  <path d="M38 34H82C84.2091 34 86 35.7909 86 38V43C86 45.2091 84.2091 47 82 47H50V34H38Z" fill="url(#amberGrad)" filter="url(#shadow)"/>
+  
+  <!-- Middle Horizontal Beam Accent -->
+  <path d="M50 56H76C78.2091 56 80 57.7909 80 60V64C80 66.2091 78.2091 68 76 68H50V56Z" fill="#F97316"/>
+  
+  <!-- Decorative Accent Diamond Dot -->
+  <circle cx="86" cy="62" r="4" fill="#D97706"/>
+</svg>

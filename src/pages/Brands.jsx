@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Brands.css';
 
 const Brands = () => {
@@ -6,16 +7,31 @@ const Brands = () => {
         <div className="brands-page">
             <div className="page-header">
                 <div className="container">
-                    <h1>Our Brands</h1>
+                    <div className="breadcrumb">
+                        <Link to="/">Home</Link>
+                        <span>/</span>
+                        <span>Brands</span>
+                    </div>
+                    <h1>Our Authorized Brands</h1>
+                    <p className="product-cat">35+ Certified Global Manufacturers &amp; Partners</p>
                 </div>
             </div>
 
             <section className="section">
                 <div className="container">
+                    <div className="text-center" style={{ marginBottom: '3rem' }}>
+                        <span className="section-badge">Official Partners</span>
+                        <h2 className="section-title">Trusted Worldwide Engineering Brands</h2>
+                        <p className="section-desc">
+                            We source directly from world-class manufacturing leaders in plumbing, drainage, valves, mixing taps, and pipe support systems.
+                        </p>
+                    </div>
+
                     <div className="brands-grid">
                         {brands.map((brand, index) => (
-                            <div key={index} className="brand-card">
-                                <img src={brand.logo} alt={brand.name} className="brand-logo" />
+                            <div key={index} className="brand-card" title={brand.name}>
+                                <img src={brand.logo} alt={brand.name} className="brand-logo" loading="lazy" />
+                                <span className="brand-name-tooltip">{brand.name}</span>
                             </div>
                         ))}
                     </div>
