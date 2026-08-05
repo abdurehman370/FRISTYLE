@@ -15,7 +15,7 @@ const Footer = () => {
                         <Phone size={16} className="icon" /> <a href="tel:+971505878157" style={{ color: 'inherit' }}>+971 50 587 8157</a>
                     </p>
                     <p className="email">
-                        <Mail size={16} className="icon" /> sales@rgsgulf.com
+                        <Mail size={16} className="icon" /> fristyle2023@gmail.com
                         <br />
                         <span className="indent">sales1@rgsgulf.com</span>
                     </p>

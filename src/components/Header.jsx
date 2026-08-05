@@ -31,7 +31,7 @@ const Header = () => {
                     <div className="contact-info">
                         <a href="tel:+971505878157" className="contact-item"><Phone size={14} /> +971 50 587 8157</a>
                         <a href="https://wa.me/971505878157" className="contact-item" target="_blank" rel="noopener noreferrer"><Phone size={14} /> +971 50 587 8157 (CALL/WA)</a>
-                        <a href="mailto:sales@rgsgulf.com" className="contact-item"><Mail size={14} /> sales@rgsgulf.com</a>
+                        <a href="mailto:fristyle2023@gmail.com" className="contact-item"><Mail size={14} /> fristyle2023@gmail.com</a>
                     </div>
                     <div className="address-info mobile-hidden">
                         <span className="contact-item"><MapPin size={14} /> Dubai,UAE</span>
