@@ -1,8 +1,10 @@
 .footer {
-    background-color: var(--primary-blue);
+    background: linear-gradient(180deg, var(--primary-blue) 0%, #090d16 100%);
     color: var(--white);
     padding-top: 4rem;
     margin-top: auto;
+    border-top: 3px solid var(--primary-orange);
+    position: relative;
 }
 
 .footer-content {
@@ -13,11 +15,12 @@
 }
 
 .footer-col h3 {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     margin-bottom: 1.5rem;
     color: var(--primary-orange);
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: 0.5px;
 }
 
 .footer-col p {
@@ -25,14 +28,15 @@
     align-items: flex-start;
     gap: 0.8rem;
     margin-bottom: 0.8rem;
-    font-size: 0.9rem;
+    font-size: 0.92rem;
     line-height: 1.6;
+    color: #cbd5e1;
 }
 
 .footer-col .icon {
     margin-top: 3px;
     flex-shrink: 0;
-    color: var(--primary-orange);
+    color: var(--primary-amber);
 }
 
 .indent {
@@ -45,14 +49,14 @@
 }
 
 .footer-links a {
-    color: #e0e0e0;
-    font-size: 0.9rem;
-    transition: color 0.3s;
+    color: #cbd5e1;
+    font-size: 0.92rem;
+    transition: all 0.25s ease;
 }
 
 .footer-links a:hover {
-    color: var(--primary-orange);
-    padding-left: 5px;
+    color: var(--primary-amber);
+    padding-left: 6px;
 }
 
 .social-icons {
@@ -61,24 +65,30 @@
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
+    width: 42px;
+    height: 42px;
+    background-color: rgba(255, 255, 255, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: background-color 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    color: var(--white);
 }
 
 .social-icon:hover {
-    background-color: var(--primary-orange);
+    background: linear-gradient(135deg, #ea580c 0%, #d97706 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(234, 88, 12, 0.4);
+    border-color: transparent;
 }
 
 .footer-bottom {
-    background-color: #003055;
+    background-color: #070a11;
     padding: 1.5rem 0;
     text-align: center;
     font-size: 0.85rem;
-    color: #aaaaaa;
+    color: #94a3b8;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
